@@ -1,6 +1,5 @@
 module.exports = {
   async addProduct(data) {
-
     console.log("Ingresó a ../services => addProduct");
 
     const dataBody = data;
@@ -8,14 +7,18 @@ module.exports = {
     console.log(dataBody);
 
     try {
-      const response = await fetch("http://localhost:8080/api/product/create", {
-        method: "post",
-        body: dataBody,
-      }).then((response) => response.JSON())
-      .catch((err) => console.log(err));
 
-      const results = await response.json();
-      console.log(results);
+      const response = await fetch("http://localhost:8080/api/product/create", {
+        method: "POST",
+        headers: {
+          'Content-Type':'application/json'
+        },
+        body: JSON.stringify(dataBody),
+      })
+      .then(res=>console.log(res))
+      .catch(err=>console.log(err));
+
+      const results = response.json();
       return results;
     } catch (error) {
       console.log(error);
