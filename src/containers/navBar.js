@@ -14,6 +14,9 @@ export default function NavBar() {
       <Nav.Item as="li">
         <Nav.Link href="/buscador" eventKey="link-2">Buscar Productos</Nav.Link>
       </Nav.Item>
+      <Nav.Item as="li">
+        <Nav.Link href="/carritos" eventKey="link-2">Listar Carritos</Nav.Link>
+      </Nav.Item>
     </Nav>
   );
 }
