@@ -7,7 +7,7 @@ export default function FromAddProducts( {addProductOnForm, preventDefault} ) {
     <div>
       <h1>Agregar Producto</h1>
 
-      <Form onSubmit={preventDefault} id="form-addproduct" action="http://localhost:8080/api/product/create" method="POST">
+      <Form onSubmit={preventDefault} id="form-chat" action="http://localhost:8080/api/product/create" method="POST">
         <Form.Group className="mb-3">
           <Form.Label for="title">Nombre del Producto</Form.Label>
           <Form.Control id="title" type="text" name="title" placeholder="Ingrese nombre del producto" />
@@ -28,10 +28,10 @@ export default function FromAddProducts( {addProductOnForm, preventDefault} ) {
           <Form.Control id="thumbnail" type="text" name="thumbnail" placeholder="Ingrese URL de imagen del producto" />
         </Form.Group>
 
-        <Form.Group className="mb-3">
+        {/* <Form.Group className="mb-3">
           <Form.Label for="timestamp">Timestamp</Form.Label>
           <Form.Control id="timestamp" type="text" name="timestamp" placeholder="Ingrese horario en que agregó producto"/>
-        </Form.Group>
+        </Form.Group> */}
 
         <Form.Group className="mb-3">
           <Form.Label for="code">Codigo SKUD</Form.Label>

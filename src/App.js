@@ -4,8 +4,11 @@ import AddProductContainer from "./containers/addProductContainer";
 import SearchContainer from "./containers/searchContainer";
 import CartsListContainer from "./containers/cartsListContainer";
 import NavBar from "./containers/navBar";
+import ChatContainer from "./containers/chatContainer";
+
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
+import InputChatContainer from "./containers/inputChatContainer";
 
 function App() {
   return (
@@ -33,6 +36,12 @@ function App() {
           {/* Ruta de búsqueda de productos de productos */}
           <Route exact path="/carritos">
             <CartsListContainer />
+          </Route>
+
+          {/* Ruta de búsqueda de productos de productos */}
+          <Route exact path="/chat">
+            <InputChatContainer />
+            <ChatContainer />
           </Route>
 
         </Switch>

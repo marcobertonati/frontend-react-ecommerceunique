@@ -7,6 +7,8 @@ import { Container, Row, Col } from "react-bootstrap";
 import Cart from "../cart/cart";
 
 export default function CartList({ cartList }) {
+
+  {console.log(cartList)}
   return (
       <Row>
         {cartList.map((cart) => {

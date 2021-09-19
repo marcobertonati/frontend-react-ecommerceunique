@@ -25,7 +25,7 @@ export default function AddProductContainer() {
     const description = document.getElementById("description").value;
     const price = document.getElementById("price").value;
     const thumbnail = document.getElementById("thumbnail").value;
-    const timestamp = document.getElementById("timestamp").value;
+    const timestamp = new Date().toLocaleDateString();
     const code = document.getElementById("code").value;
     const stock = document.getElementById("stock").value;
 

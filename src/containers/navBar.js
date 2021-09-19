@@ -17,6 +17,9 @@ export default function NavBar() {
       <Nav.Item as="li">
         <Nav.Link href="/carritos" eventKey="link-2">Listar Carritos</Nav.Link>
       </Nav.Item>
+      <Nav.Item as="li">
+        <Nav.Link href="/chat" eventKey="link-2">Chat</Nav.Link>
+      </Nav.Item>
     </Nav>
   );
 }
