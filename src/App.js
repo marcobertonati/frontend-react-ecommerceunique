@@ -5,6 +5,7 @@ import SearchContainer from "./containers/searchContainer";
 import CartsListContainer from "./containers/cartsListContainer";
 import NavBar from "./containers/navBar";
 import ChatContainer from "./containers/chatContainer";
+import LoginContainer from "./containers/loginContainer";
 
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -15,6 +16,8 @@ function App() {
     <BrowserRouter>
       {/* Acá debería ir el componente de NAVBAR */}
       <Container>
+        <LoginContainer />
+        
         <NavBar />
 
         <Switch>

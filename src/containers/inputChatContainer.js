@@ -3,6 +3,7 @@ import { postMessageChat } from "../services/chatService";
 import InputChat from "../components/inputChat/inputChat";
 
 export default function InputChatContainer() {
+
   function preventDefault(e) {
     e.preventDefault();
   }
@@ -10,7 +11,7 @@ export default function InputChatContainer() {
   function sendChatMsg() {
     console.log("Entro a addProductOnForm");
 
-    const email = document.getElementById("id").value;
+    const id = document.getElementById("email").value;
     const firstName = document.getElementById("first-name").value;
     const lastName = document.getElementById("last-name").value;
     const age = document.getElementById("age").value;
@@ -21,7 +22,7 @@ export default function InputChatContainer() {
 
     const chat = {
       author: {
-        id: email,
+        id: id,
         firstName: firstName,
         lastName: lastName,
         age: age,

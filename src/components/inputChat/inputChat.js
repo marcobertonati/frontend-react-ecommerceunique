@@ -14,7 +14,7 @@ export default function InputChat({ preventDefault, postMessageChat }) {
         <Col>
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Correo Electrónico</Form.Label>
-            <Form.Control id="id" type="email" placeholder="Enter email" />
+            <Form.Control id="email" type="email" placeholder="Enter email" />
           </Form.Group>
         </Col>
 
