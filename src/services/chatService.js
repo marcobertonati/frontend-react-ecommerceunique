@@ -5,6 +5,8 @@ module.exports = {
     try {
       const response = await fetch("http://localhost:8080/api/message/list");
       const result = response.json();
+      console.log('Esto trae results');
+      console.log(result);
       return result;
     } catch (error) {
       console.log(error);
