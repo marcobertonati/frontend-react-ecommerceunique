@@ -5,6 +5,8 @@ import { Container, Row, Col } from "react-bootstrap";
 
 export default function Chat({ message }) {
 
+  console.log(message)
+
   return (
     <Col xs={12}>
         <p>{message.author.id} || {message.author.date} || Mensaje: {message.text}</p>

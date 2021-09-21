@@ -13,13 +13,13 @@ export default function ChatContainer() {
     data
       .then((chats) => {
 
-        const userSchema = new schema.Entity("authors");
+        const userSchema = new schema.Entity("author");
         const entrySchema = new schema.Entity(
           "entries",
           {
             author: userSchema,
           },
-          { idAttribute: (value) => value._id }
+          { idAttribute: (value) => value._id.toString() }
         ); /*Este es el ID del mensaje de chat */
 
         const chatSchema = new schema.Entity("chat", {
